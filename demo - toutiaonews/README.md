@@ -1,8 +1,15 @@
-# toutiaonews
+# 今日头条 - demo版
 
-> A Vue.js project
+> 在自己学习vuejs不久写的个demo，练练手，会继续更新完善。
 
-## Build Setup
+## 说明
+``` bash
+# 技术栈说明
+本demo涉及技术栈包括：vue.js + vue-router +vue-cli脚手架工具。
+由于还没开始学vuex，所以暂时没有涉及到，后面学习了在用进来。
+
+```
+## 安装
 
 ``` bash
 # install dependencies
@@ -17,5 +24,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
