@@ -7,13 +7,13 @@
             <div class="del_list">
                 <div>点击删除以下频道</div>
                 <ul>
-                    <li v-for="(list,index) in add_list" @click="del(index)"><a href="javascript:;">{{list}}</a></li>
+                    <li v-for="(list,index) in del_list" @click="del(index)"><a href="javascript:;">{{list}}</a></li>
                 </ul>
             </div>
             <div class="add_list">
                 <div>点击添加以下频道</div>
                 <ul>
-                    <li v-for="(list,index) in del_list" @click="add(index)"><a href="javascript:;">{{list}}</a></li>
+                    <li v-for="(list,index) in add_list" @click="add(index)"><a href="javascript:;">{{list}}</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +50,7 @@
         transform: scale3d(.3,.3,.3);
     }
     50% {
-            opacity: 1;
+       opacity: 1;
     }
 }
 .add_mian ul li a{
@@ -69,19 +69,19 @@
 export default {
     data () {
         return {
-            add_list:['推荐','热点','娱乐','科技','体育','财经','国际','游戏','美文'],
-            del_list:['社会','汽车','军事','时尚','旅游','历史','探索','美食','育儿','养生','故事']
+            del_list:['推荐','热点','娱乐','科技','体育','财经','国际','游戏','美文'],
+            add_list:['社会','汽车','军事','时尚','旅游','历史','探索','美食','育儿','养生','故事']
         }
     },
     methods:{
         goback () {
         this.$router.goBack()
         },
-        add(index){
+        del(index){
             this.add_list.push(this.del_list[index])
             this.del_list.splice(index,1)
         },
-        del(index){
+        add(index){
             this.del_list.push(this.add_list[index])
             this.add_list.splice(index,1)
         }

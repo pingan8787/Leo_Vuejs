@@ -1,8 +1,11 @@
 <template>
     <div class="shipin">
-        <div class="shipin_content" v-for="list in shipinlist">
+        <div class="shipin_content" v-for="list in shipinlist" @click="run_article(list.article_url)">
             <div class="shipin_title">{{list.title}}</div>
-            <div class="shipin_img" :style="'background:url('+list.large_image_url+')no-repeat;background-size: contain;'">
+            <div class="shipin_img" v-if="list.large_image_url" :style="'background:url('+list.large_image_url+')no-repeat;background-size: contain;'">
+            </div>
+            <div class="news_img" v-if="list.image_list">
+                    <img :src="img_list.url"  v-for="img_list in list.image_list">
             </div>
             <div class="shipin_bottom">
                 <span>热</span>
@@ -55,6 +58,11 @@ export default {
         .catch(function(error) {
             console.log(error);
         });
+    },
+    methods:{
+        run_article:function(url){
+            window.location.href=url;
+        }
     }
 }
 </script>

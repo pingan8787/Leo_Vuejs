@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'app'
 }
@@ -70,6 +69,10 @@ a{
     color:#999;
     padding-bottom:30px;
     border-bottom:1px solid hsla(0,0%,87%,.6);
-    
+}
+.shipin_img{
+    width:100%;
+    height:515px;
+    margin: 15px 0;
 }
 </style>

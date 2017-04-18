@@ -4,7 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import Mint from 'mint-ui'
+import { Loadmore } from 'mint-ui';
 
+Vue.use(Mint)
+Vue.component(Loadmore.name, Loadmore);
 Vue.config.productionTip = false
 Vue.prototype.$ajax = axios
 

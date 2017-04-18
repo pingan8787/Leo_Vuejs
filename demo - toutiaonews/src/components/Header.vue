@@ -1,18 +1,18 @@
 <template>
   <div id="main">
-     <div class="top_bar">
-        <div class="top_l">
-          <a href="javascript:;" class="msg-box"><div class="tips"></div></a>
-        </div>
-        <div class="top_c">
-          <a href="javascript:;" class="top_c_title"></a>
-          <a href="javascript:;" class="top_c_img" @click="reviews"></a>
-        </div>
-        <div class="top_r">
-              <router-link to="/Search" class="top_r_btn"></router-link>
-        </div>
-     </div>
-     <div class="top_div">
+    <div class="top_bar">
+      <div class="top_l">
+        <a href="javascript:;" class="msg-box"><div class="tips"></div></a>
+      </div>
+      <div class="top_c">
+        <a href="javascript:;" class="top_c_title"></a>
+        <a href="javascript:;" class="top_c_img" @click="reviews"></a>
+      </div>
+      <div class="top_r">
+        <router-link to="/Search" class="top_r_btn"></router-link>
+      </div>
+    </div>
+    <div class="top_div">
       <div class="top_menu">
           <div class="top_menu_more">
               <router-link to="/Addhobby" class="more_btn"></router-link>
@@ -29,7 +29,7 @@
               <router-link to="/news/junshi">军事</router-link>
           </div>
       </div> 
-     </div>
+    </div>
   </div>
 </template>
 
@@ -37,6 +37,7 @@
 #main{
   position: fixed;
   width: 100%;
+  z-index: 19;
 }
 .top_bar{
   height:100px;

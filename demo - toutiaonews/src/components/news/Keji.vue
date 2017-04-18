@@ -2,7 +2,9 @@
     <div class="keji">
         <div class="news_content" v-for="list in newslist" @click="run_article(list.article_url)">
             <div class="news_title">{{list.title}}</div>
-            <div class="news_img">
+            <div class="shipin_img" v-if="list.large_image_url" :style="'background:url('+list.large_image_url+')no-repeat;background-size: contain;'">
+            </div>
+            <div class="news_img" v-if="list.image_list">
                     <img :src="img_list.url"  v-for="img_list in list.image_list">
             </div>
             <div class="news_bottom">
