@@ -24,3 +24,15 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+
+## 目前实现
+
+``` bash
+> 1 - 首页 导航条切换
+> 2 - 搜索 页面
+> 3 - 添加兴趣 页面
+> 4 - 导航 切换页面内容
+> 5 - 点击文章 查看详情页
+> 6 - 每个页面 后退功能
+
+```
