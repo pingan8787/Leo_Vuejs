@@ -15,34 +15,6 @@
     </div>
 </template>
 <style>
-.tuijian{
-    background-color:#fff;
-}
-.news_content{
-    padding:15px 30px;
-    cursor:pointer;
-}
-.news_title{
-    font-size:16px;
-}
-.news_img{
-    width:100%;
-}
-.news_img img{
-    padding:0;
-    margin:10px 0;
-    width:32%;
-}
-.news_img img:nth-child(2) {
-    margin:10px 15px;
-}
-.news_bottom{
-    font-size:12px;
-    color:#999;
-    padding-bottom:30px;
-    border-bottom:1px solid hsla(0,0%,87%,.6);
-    
-}
 </style>
 
 <script>

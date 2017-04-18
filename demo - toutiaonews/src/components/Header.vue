@@ -23,10 +23,10 @@
               <router-link to="/news/redian">热点</router-link>
               <router-link to="/news/shehui">社会</router-link>
               <router-link to="/news/yule">娱乐</router-link>
-              <router-link to="/news/junshi">军事</router-link>
-              <router-link to="/news/keji">科技</router-link>
               <router-link to="/news/qiche">汽车</router-link>
               <router-link to="/news/caijing">财经</router-link>
+              <router-link to="/news/keji">科技</router-link>
+              <router-link to="/news/junshi">军事</router-link>
           </div>
       </div> 
      </div>

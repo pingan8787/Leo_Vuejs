@@ -15,9 +15,6 @@
 </template>
 
 <style>
-.shipin{
-    background-color:#fff;
-}
 .shipin_content{
     padding:15px 30px;
     cursor:pointer;
