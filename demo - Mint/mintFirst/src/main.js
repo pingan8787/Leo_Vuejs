@@ -5,12 +5,16 @@ import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import App from './App'
 import router from './router'
-import { Header, Loadmore, InfiniteScroll, Actionsheet, Popup } from 'mint-ui';
+import { Header, Loadmore, InfiniteScroll, Actionsheet, Popup, Swipe, SwipeItem, Tabbar, TabItem } from 'mint-ui';
 
+Vue.component(Tabbar.name, Tabbar);
+Vue.component(TabItem.name, TabItem);
 Vue.component(Header.name, Header);
 Vue.component(Loadmore.name, Loadmore);
 Vue.component(Actionsheet.name, Actionsheet);
-Vue.component(Popuo.name, Popup)
+Vue.component(Popup.name, Popup)
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 
 Vue.config.productionTip = false
 Vue.use(Mint);

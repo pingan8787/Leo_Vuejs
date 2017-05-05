@@ -7,8 +7,8 @@
         <div>
           <router-link to="/h2" style="color:#000">2 - loadmore页面</router-link><br>
           <router-link to="/h3" style="color:#000">3 - infinite页面</router-link><br>
-          <router-link to="/h4" style="color:#000">4 - loadmore页面</router-link><br>
-          <router-link to="/h5" style="color:#000">5 - infinite页面</router-link><br>
+          <router-link to="/h4" style="color:#000">4 - popup页面</router-link><br>
+          <router-link to="/h5" style="color:#000">5 - swipe页面</router-link><br>
           <router-link to="/h6" style="color:#000">6 - loadmore页面</router-link><br>
           <router-link to="/h7" style="color:#000">7 - infinite页面</router-link><br>
         </div>
