@@ -395,3 +395,7 @@ const moduleA = {
 1. [源码分析(上)](https://www.imooc.com/article/14739)
 2. [源码分析(中)](https://www.imooc.com/article/14740)
 3. [源码分析(下)](https://www.imooc.com/article/14741)
+
+## 参考demo
+1. [Vue 全家桶 + axios 前端实现登录拦截、登出、拦截器等功能](https://github.com/superman66/vue-axios-github)
+2. [一款基于Vue2.0高仿微信App的单页应用 ](https://github.com/zhaohaodang/vue-WeChat)
