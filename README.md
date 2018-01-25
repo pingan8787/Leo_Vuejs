@@ -1,12 +1,3 @@
-# 个人vuejs学习demo
+# 介绍
+> 整理一些 `vue全家桶` 的使用经验和学习资料。
 
-> 在这里放一些自己写的demo，便于记录。
-
-## 目录
-``` bash
-目前做的有这些：
-> 1 - demo-toutiaonews  写一个今日头条的demo;
-> 2 - demo-Mint  使用vuejs的mint框架;
-> 3 - demo-wangyiyun(Mint)  使用vuejs的mint框架，写的网易云音乐界面;
-
-```
