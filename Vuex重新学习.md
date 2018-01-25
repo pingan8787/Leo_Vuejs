@@ -390,3 +390,8 @@ const moduleA = {
         └── products.js   # 产品模块
 ```
 参考[购物车示例](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)。
+
+## Vuex源码分析：
+1. [源码分析(上)](https://www.imooc.com/article/14739)
+2. [源码分析(中)](https://www.imooc.com/article/14740)
+3. [源码分析(下)](https://www.imooc.com/article/14741)
