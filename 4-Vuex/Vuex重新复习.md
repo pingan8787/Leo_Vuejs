@@ -1,3 +1,5 @@
+> 个人整理的demo [打开链接](https://github.com/pingan8787/Leo_Vuejs/tree/master/2-demo/demo%20-%20Vuex/gankdemo)
+
 # Vuex核心概念整理
 ## 1、安装和使用
 npm安装：  

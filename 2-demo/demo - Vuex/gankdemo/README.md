@@ -1,6 +1,6 @@
-# gankdemo
+# Vuex复习demo -- gankdemo
 
-> A Vue.js project
+> 这是一个我用来复习Vuex知识点的demo，可能不是很完善，但基本满足业务需要，不过还是需要慢慢完善，接下来实际项目上手后，会总结出更多经验出来充实这个demo。喜欢的朋友欢迎star按钮。
 
 ## Build Setup
 
@@ -18,4 +18,4 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+欢迎访问我的个人博客 [ping'anの博客](http://www.pingan8787.com)
