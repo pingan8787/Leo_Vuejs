@@ -1,3 +1,41 @@
+## Eslint文件模版
+```js
+module.exports = {
+    "env": {
+        "browser": true,
+        "es6": true // 使用ES6语法
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion":6
+    },
+    "rules": {
+        "indent": [ // 缩进风格
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [ // 换行风格
+            "error",
+            "windows"
+        ],
+        "quotes": [ // 引号的选择
+            "error",
+            "double"
+        ],
+        "semi": [ // 结尾使用分号
+            2,
+            "always"
+        ],
+        "no-console":[ // 不使用console
+            0
+        ]
+    }
+};
+
+```
+
+## Eslint规则列表说明
 ```js
 "no-alert": 0,                    //禁止使用alert confirm prompt
 "no-array-constructor": 2,        //禁止使用数组构造器
