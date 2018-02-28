@@ -3,12 +3,12 @@
 # Vuex核心概念整理
 ## 1、安装和使用
 npm安装：  
-```
+```bash
 npm install vuex --save
 ```
 
 使用：
-```
+```js
 // main.js
 import Vuex from "vuex"
 
@@ -34,9 +34,9 @@ new Vue({
 ## 1、State 使用
 `Vuex` 使用单一状态树——是的，用一个对象就包含了全部的应用层级状态。至此它便作为一个“唯一数据源 (SSOT)”而存在。这也意味着，每个应用将仅仅包含一个 `store` 实例。单一状态树让我们能够直接地定位任一特定的状态片段，在调试的过程中也能轻易地取得整个当前应用状态的快照。
 
-```
+```js
 // Childer.vue
-名字：<span v-text="name"></span>
+// 名字：<span v-text="name"></span>
 
 import {mapState} from "vuex"
 export default {
@@ -83,7 +83,7 @@ export default {
 
 ## 2、Getter 使用
 有时候我们需要从 `store` 中的 `state` 中派生出一些状态，例如对列表进行过滤并计数：
-```
+```js
 // main.js
 const store = new Vuex.Store({
   state: {
@@ -136,7 +136,7 @@ computed:{
 ## 3、Mutation 使用
 更改 `Vuex` 的 `store` 中的状态的唯一方法是提交 `mutation`。`Vuex` 中的 `mutation` 非常类似于事件：每个 `mutation` 都有一个字符串的 `事件类型 (type)` 和 一个 `回调函数 (handler)`。   
 这个回调函数就是我们实际进行状态更改的地方，并且它会接受 `state` 作为第一个参数：  
-```
+```js
 // main.js
 const store = new Vuex.Store({
   state: {
@@ -151,7 +151,7 @@ const store = new Vuex.Store({
 })
 ```
 不可直接调用一个 `mutation handler`。这个选项更像是事件注册：“当触发一个类型为 `increment` 的 `mutation` 时，调用此函数。”要唤醒一个 `mutation handler`，你需要以相应的 `type` 调用 `store.commit` 方法：
-```
+```js
 // main.js
 store.commit('increment')
 
@@ -166,7 +166,7 @@ methods:{
 ```
 
 需要向 `store.commit` 传入额外的参数，即 `mutation` 的 载荷（payload）：
-```
+```js
 // main.js
 const store = new Vuex.Store({
   state: {
@@ -196,7 +196,7 @@ store.commit({
 })
 
 // Childer.vue
-<button @click="incrementBy({amount:11})">测试</button>
+// <button @click="incrementBy({amount:11})">测试</button>
 import {mapMutations} from "vuex"
 
 methods:{
@@ -230,7 +230,7 @@ methods:{
 * `Action` 可以包含任意异步操作。  
 
 注册一个简单的`action`:  
-```
+```js
 // main.js
 const store = new Vuex.Store({
     state:{
@@ -255,9 +255,9 @@ const store = new Vuex.Store({
 ```
 
 通过 `store.dispatch` 方法来触发 `action` 来提交修改：  
-```
+```js
 // Childer.vue
-<button @click="incrementBy({amount:11})">测试</button>
+// <button @click="incrementBy({amount:11})">测试</button>
 
 import {mapActions} from "vuex"
 
@@ -294,7 +294,7 @@ methods:{
 ## 5、Module
 由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，`store` 对象就有可能变得相当臃肿。  
 为了解决以上问题，`Vuex` 允许我们将 `store` 分割成模块（module）。每个模块拥有自己的 `state`、`mutation`、`action`、`getter`、甚至是嵌套子模块——从上至下进行同样方式的分割：  
-```
+```js
 // main.js
 const moduleA = {
   state: { ... },
@@ -322,7 +322,7 @@ store.state.b // -> moduleB 的状态
 ```
 模块的局部状态   
 对于模块内部的 `mutation` 和 `getter`，接收的第一个参数是模块的 `局部状态对象` 。  
-```
+```js
 // main.js
 const moduleA = {
   state: { count: 0 },
@@ -341,7 +341,7 @@ const moduleA = {
 }
 ```
 同样，对于模块内部的 `action`，局部状态通过 `context.state` 暴露出来，根节点状态则为 `context.rootState`：  
-```
+```js
 const moduleA = {
   // ...
   actions: {
@@ -354,7 +354,7 @@ const moduleA = {
 }
 ```
 对于模块内部的 `getter`，根节点状态会作为第三个参数暴露出来：  
-```
+```js
 const moduleA = {
   // ...
   getters: {
